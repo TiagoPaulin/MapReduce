@@ -9,29 +9,18 @@ programação MapReduce para extrair uma série de informações sobre transaç�
 internacionais realizadas pela empresa nos últimos 30 anos. Essas transações estão armazenadas em um
 dataset estruturado com 10 colunas, conforme a descrição apresentada na tabela abaixo:
 
-*===================*===============================================================*
 | Variable (column) | Description                                                   |
-*===================*===============================================================*
+|-------------------|---------------------------------------------------------------|
 | Country           | Country involved in the commercial transaction                |
-*-------------------*---------------------------------------------------------------*
 | Year              | Year in which the transaction took place                      |
-*-------------------*---------------------------------------------------------------*
 | Commodity code    | Commodity identifier                                          |
-*-------------------*---------------------------------------------------------------*
 | Commodity         | Commodity description                                         |
-*-------------------*---------------------------------------------------------------*
 | Flow              | Flow, e.g. Export or Import                                   |
-*-------------------*---------------------------------------------------------------*
 | Price             | Price, in USD                                                 |
-*-------------------*---------------------------------------------------------------*
 | Weight            | Commodity weight                                              |
-*-------------------*---------------------------------------------------------------*
 | Unit              | Unit in which the commodity is measured, e.g. Number of items |
-*-------------------*---------------------------------------------------------------*
 | Amount            | Commodity amount given in the aforementioned unit             |
-*-------------------*---------------------------------------------------------------*
 | Category          | Commodity category, e.g. Live animals                         |
-*===================*===============================================================*
 
 O dataset contêm mais 8 milhões de exemplos (ou seja, 8 milhões de linhas que representam as
 transações comerciais da empresa). Esse dataset é disponibilizado no formato CSV em que as colunas são
