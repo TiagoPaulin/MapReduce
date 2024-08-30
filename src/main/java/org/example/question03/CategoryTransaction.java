@@ -49,13 +49,13 @@ public class CategoryTransaction {
         public void map(LongWritable key, Text value, Context con)
                 throws IOException, InterruptedException {
 
-            String row = value.toString();
-
-            if (key.get() == 0 && row.contains("category")) {
+            if (key.get() == 0) {
 
                 return;
 
             }
+
+            String row = value.toString();
 
             String[] fields = row.split(";");
 

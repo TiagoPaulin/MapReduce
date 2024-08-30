@@ -38,10 +38,9 @@ public class BrazilTransaction {
         job.setOutputValueClass(IntWritable.class);
 
 
-        FileInputFormat.addInputPath(job,input);
-        FileOutputFormat.setOutputPath(job,output);
+        FileInputFormat.addInputPath(job, input);
+        FileOutputFormat.setOutputPath(job, output);
 
-        //4. exit
         System.exit(job.waitForCompletion(true)?0:1);
 
     }
@@ -51,15 +50,15 @@ public class BrazilTransaction {
         public void map(LongWritable key, Text value, Context con)
                 throws IOException, InterruptedException {
 
-            String target = "Brazil";
-
-            String row = value.toString();
-
-            if (key.get() == 0 && row.contains("country_or_area")) {
+            if (key.get() == 0) {
 
                 return;
 
             }
+
+            String target = "Brazil";
+
+            String row = value.toString();
 
             String[] fields = row.split(";");
 

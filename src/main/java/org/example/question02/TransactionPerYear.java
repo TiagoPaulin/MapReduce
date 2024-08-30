@@ -1,4 +1,4 @@
-package org.example.question2;
+package org.example.question02;
 
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.Path;
@@ -49,13 +49,13 @@ public class TransactionPerYear {
         public void map(LongWritable key, Text value, Context con)
                 throws IOException, InterruptedException {
 
-            String row = value.toString();
-
-            if (key.get() == 0 && row.contains("year")) {
+            if (key.get() == 0) {
 
                 return;
 
             }
+
+            String row = value.toString();
 
             String[] fields = row.split(";");
 
