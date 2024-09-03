@@ -24,7 +24,7 @@ public class TransactionPerYear {
         Configuration config = new Configuration();
 
         Path input = new Path("input/operacoes_comerciais_inteira.csv");
-        Path output = new Path("output/result.txt");
+        Path output = new Path("output/question02");
 
         Job job = new Job(config, "transactioPerYearCount");
 
