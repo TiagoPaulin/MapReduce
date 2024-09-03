@@ -40,8 +40,7 @@ desenvolver soluções em MapReduce capazes de responder as seguintes perguntas:
 6. (1,5 ponto) Transação mais cara e mais barata no Brasil em 2016.
 7. (1,5 ponto) Valor médio das transações por ano, considerando somente as transações do
    tipo exportação (Export) realizadas no Brasil.
-8. (2,0 ponto) Transação com o maior e menor preço comercializada em 2016 (com base na
-   coluna amount), por ano e país.
+8. (2,0 ponto) Transação com o maior e menor preço (com base na coluna amount), por ano e país.
 
 ## Regras:
 
